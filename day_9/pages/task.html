@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mastercraft Bamboo Monitor Riser</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    position: relative; /* Use relative for parent */
+  }
+  .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .menu li {
+    display: inline;
+    margin-right: 20px;
+  }
+  .menu a {
+    text-decoration: none;
+    color: #333;
+  }
+  .main-content {
+    position: relative; /* Use relative for parent */
+    text-align: center;
+    padding-top: 50px;
+    background: url('your-background-image.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  .main-content h1, .main-content p {
+    position: relative; /* Use relative for stacking context */
+    z-index: 2;
+  }
+  .button-container {
+    position: relative; /* Relative for child positioning */
+    z-index: 2;
+  }
+  .button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #4cae4c;
+  }
+  .bookmark-container {
+    position: absolute;
+    top: 50%; /* Adjust as per design */
+    left: 50%; /* Center the container */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  .bookmark {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    transition: border-color 0.3s;
+    background-color: white;
+    position: absolute;
+    top: -20px; /* Adjust as per design */
+    right: -20px; /* Adjust as per design */
+  }
+  .bookmark:hover {
+    border-color: #666;
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="logo">crowdfund</div>
+  <ul class="menu">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Discover</a></li>
+    <li><a href="#">Get Started</a></li>
+  </ul>
+</div>
+
+<div class="main-content">
+  <div class="bookmark-container">
+    <!-- This will serve as a pseudo-background for absolute elements -->
+  </div>
+  <h1>Mastercraft Bamboo Monitor Riser</h1>
+  <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
+  <div class="button-container">
+    <button class="button">Back this project</button>
+    <button class="bookmark">Bookmark</button>
+  </div>
+</div>
+
+</body>
+</html>

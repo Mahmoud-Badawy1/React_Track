@@ -1,0 +1,86 @@
+/* body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0; 
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: relative; 
+  background-color: #ffffff; 
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  position: relative; /* Set the hero to relative for the background image */
+  /*text-align: center;
+  padding: 2rem 1rem; /* Adjust padding as needed */
+/*}
+*/
+/*
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1; /* Place the image behind the content */
+/*}
+
+.hero-content {
+  position: relative;
+  z-index: 1; /* Ensure the content is above the background image */
+  /*margin-bottom: 2rem;
+/*}
+
+.hero h1 {
+  margin: 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.hero p {
+  color: #666;
+}
+
+.hero button {
+  margin-right: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #3CB3AB;
+  color: white;
+  cursor: pointer;
+}
+/*
+.hero button:last-of-type {
+  background-color: transparent;
+  border: 1px solid #333;
+  color: #333;
+}
+*/

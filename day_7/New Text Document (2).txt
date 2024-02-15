@@ -1,0 +1,33 @@
+create 5 pages with HTML only
+On first Page, I want to do 
+list of 5 page links in the navbar
+H1 home page center without css
+P 
+3 PHOTOS
+=========page 2
+in Page2 I want to do 
+1- list of 5 pages links in the navbar
+2- headline "about" h1 about and make it center without 
+3- write a description under the headline
+4- photo double.infinity without CSS
+=======login page
+in Page3 I want to do
+1- list of 5 pages links in the navbar
+2- form:
+username
+password
+remember me checbox
+submit=> page5
+==========register
+in Page4 I want to do
+list of 5 pages links in the navbar
+5 inputs in form:
+username 
+email
+password
+date of birth
+male or female with radio
+submit=> login page
+=======page 5
+in Page5 I want to do this 
+معادلة كيميائية

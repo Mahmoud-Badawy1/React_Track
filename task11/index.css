@@ -1,0 +1,85 @@
+
+body {
+    font-family: 'Your font', sans-serif;
+  }
+  
+  header {
+    background: url('../day11_task/images/image-hero-desktop.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+  }
+  
+  nav .logo {
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    color: #fff;
+    padding: 2em;
+  }
+  
+  .intro {
+    display: flex;
+    padding: 2em;
+  }
+  
+  .intro-text {
+    flex: 1;
+  }
+  
+  .intro-image {
+    flex: 1;
+    /* Add background image here */
+    background-image: url(../day11_task/images/image-hero-desktop.jpg);
+  }
+  
+  .creations h2 {
+    text-align: center;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+  }
+  
+  .gallery-item {
+    text-align: center;
+  }
+  
+  footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  footer .social-media {
+    padding: 1em;
+  }
+  
+  @media (max-width: 768px) {
+    .intro {
+      flex-direction: column;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+  }
+  

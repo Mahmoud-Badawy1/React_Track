@@ -1,0 +1,189 @@
+/* .header{
+    margin: 0;
+    background-color: white;
+    display: flex;
+}
+.body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0; 
+    margin: 0;
+    padding: 0;
+  }
+  .header .hero{
+    position: relative;
+    display: flex;
+  }
+  .headerbar{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    text-align: center ; 
+   justify-content: space-between;
+   margin: 0;
+   padding: 0;
+  }
+ .menu{
+    display: flex;
+    list-style-type: none;
+  }
+  .menu li{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 20px;
+  }
+  .box{
+    display: block;
+    justify-content: center;
+    position: absolute;
+  }
+  .img{
+    display: flex;
+    justify-content: center;
+    /* width: -32px; */
+    /* position: absolute; */
+/*  } */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    position: relative;
+    height: 50vh; /* Adjust as needed */
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .headerbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .header h1 {
+    margin: 0;
+    color: white; 
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white; 
+  }
+  
+  .box {
+    position: absolute;
+    top: 55%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%; 
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .img {
+    position: relative;
+    top: -50px; /* Adjust to place the logo as in the design */
+  }
+  
+  .center h1 {
+    margin: 20px 0 10px;
+  }
+  
+  .center p {
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .button, .bookmark {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .button {
+    background-color: #3CB371; 
+    color: white;
+  }
+  
+  .bookmark {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333; 
+  }
+  
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .menu {
+      display: none;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: black; /* Black background window */
+      color: white;
+      padding-top: 20px; /* Add some space at the top */
+      text-align: center;
+      margin: 0;
+    }
+  
+    .menu-icon {
+      display: block; /* Show menu icon */
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1000; /* Ensure it's above other content */
+    }
+  
+    .menu li {
+      display: block; /* Stack the list items */
+      margin: 10px 0;
+    }
+  
+    .menu a {
+      display: block;
+      padding: 10px 0;
+    }
+  
+    .headerbar {
+      justify-content: space-between;
+    }
+  }
+  
+  
