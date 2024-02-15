@@ -11,7 +11,7 @@ html, body {
   .hero {
     min-height: 600px;
     width: 100%;
-    background: url('../images/image-hero-desktop.jpg') no-repeat;
+    background: url('../images/images/desktop/image-hero.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
@@ -21,31 +21,33 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0 20px; */
+    padding: 0 20px; 
   }
   .header .logo img {
-    width: 150px;
+    width: 200px;
   }
   .header .menu ul {
     list-style-type: none;
     display: flex;
     gap: 20px;
+    color: #ffffff;
   }
   
   .hero .content {
-    display: inline-flex;
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 200px ;
+    margin-top: 10%;
+    margin-left:10% ;
     padding: 10 40px;
     color: #fff;
     border: 2px solid;
-    width: 30%;
+    width: 50%;
   }
 
   .hero .content p {
     font-size: 60px;
-    margin: 0 auto;
+    margin: 0;
     width: 100%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -87,20 +89,17 @@ html, body {
     margin: 0 auto;
     width: 100%;
   }
-  .section .container > .title h2 {
+  .section .container > .title2 h2 {
     font-size: 30px;
     text-shadow: 0 10px 5px #AAA;
     text-align: center;
   }
 
-  .title{
-    display: flex;
-    justify-content: space-between;
-  }
+
   .bg-gray {
     background: #EEE;
   }
-  .section .container .title button {
+  .section .container .title2 button {
     padding: 10px 30px;
     font-size: 16px;
     background: transparent;
@@ -108,7 +107,7 @@ html, body {
     border: 1px solid #000000;
     width: 20%;
     height: 50%;
-    margin-top: 30px;
+    margin-top: 25px;
   }
   .flex-row {
     flex-direction: row;
@@ -131,21 +130,60 @@ html, body {
   }
   .section2 .container2 .title h2 {
    color:#fff ; 
+   display: block;
    font-size: 30px;
    margin: 10px 90px;
     text-align: center;
   }
-  .col-1\/2 {
-    width: 100%;
-    margin: 20px 50px;
+  .title{
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .title2{
+    display: flex;
     justify-content: space-between;
   }
+  .col-1\/2 {
+    width: 100%;
+    height: 100%;
+    margin: 0 100px 0 200px;
+    justify-content: right;
+  }
+  .social{
+    display: inline-flex;
+    width:100% ;
+    top: 100%;
+    right: 50%;
+    transform: translate(0, -100%);
+    margin: 0;
+    padding: 0;
+    justify-content: right;
+  }
+  .social img{
+    padding: 0 0;
+    width: 30px;
+    margin:0 10px;
+  }
+  .flex-row2 {
+    gap: 10px;
+    justify-content: space-between;
+    display: flex;
+  }
+
   .flex-row2 .bottommenu{
+    display: block;
     flex-direction: row;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin: 0;
+  }
+  .col-1\/2 p{
+    color: #eeeeee85;
+    padding: 0;
+    font-weight:200;
+    text-align: end;
   }
   .bottommenu ul{
     justify-content: space-between;
@@ -154,17 +192,8 @@ html, body {
     gap: 20px;
     color: #ffffff;
   }
-  .col-1\/2 p{
-    color: #eeeeee85;
-    padding: 0 100px;
-    font-weight:200;
-    text-align: end;
-  }
   
    .flex-row {
-    gap: 10px;
-  }
-  .flex-row2 {
     gap: 10px;
   }
 
@@ -182,11 +211,12 @@ html, body {
   
   .overlay-text {
     position: absolute;
-    top: 80%; /* Adjust as needed */
-    left: 40%; /* Adjust as needed */
+    top: 90%; /* Adjust as needed */
+    left: 35%; /* Adjust as needed */
     transform: translate(-50%, -50%);
     color: white; /* Change the text color as needed */
     text-align: left;
+    font-size: 30px;
     /* Add more styling as needed */
   }
   .menu-icon {
@@ -199,6 +229,22 @@ html, body {
 .showbox{
     display: none;
 }
+.image-container .image1{
+  display: none;
+}
+.image2 .image1{
+  display: none;
+}
+.close1{
+  display: none;
+  cursor: pointer;
+}
+.close{
+  display: none;
+}
+.seeall {
+  display: none;
+}
 
 
 /* Mobile styles */
@@ -206,9 +252,10 @@ html, body {
 
     .header .menu {
       /* Hide the menu items and replace with a hamburger icon */
-      display: none;
+       display: none;
         position: fixed;
         width: 100%;
+        height: 70%;
         top: 0;
         left: 0;
         background-color: black; /* Black background window */
@@ -216,10 +263,28 @@ html, body {
         padding-top: 20px; /* Add some space at the top */
         text-align: center;
         margin: 0;
+        justify-content: center;
     }
-    .menu li {
+    .menu ul{
+      display: block;
+      text-align: center;
+      justify-content: center;
+    }
+    .menu .close1{
+      display: flex;
+      width: 100%;
+      justify-content: end;
+    }
+    .menu .close{
+      display: flex;
+      width: 60px;
+      margin: 0 10%;
+    }
+    .header .menu li {
         display: block; /* Stack the list items */
         margin: 10px 0;
+        width: 100%;
+        justify-content: center;
       }
       .menu a {
         display: block;
@@ -228,13 +293,16 @@ html, body {
   
     .header .menu-icon {
         display: block; /* Show menu icon */
-        position: absolute;
-        top: 20px;
-        right: 20px;
+        position: block;
+        padding-top: 20px;
+        width: 50px;
         z-index: 1000; /* Ensure it's above other content */
       }
       .header{
         justify-content: space-between;
+      }
+      .header .logo{
+        z-index: 1000;
       }
   
 
@@ -248,23 +316,23 @@ html, body {
     }
 
     .hero .content{
-        margin: 50% 0;
-        width: 80%;
+        margin: 20% 10%;
+        width: 60%;
         justify-content: center;
     }
   
     .hero .content p {
-      font-size: 20px; /* Adjust font size for smaller screens */
+      font-size: 40px; /* Adjust font size for smaller screens */
     }
   
     .image-container {
       width: 100%; /* Full width for small screens */
       height: 20%;
-      margin: 20px;
+      margin: 10px;
     }
     .image-container img{
         width: 100%;
-        height: 200px;
+        height: 300px;
     }
 
     .overlay-text {
@@ -277,33 +345,43 @@ html, body {
   
  .container2{
     width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
  }
- .container2 .title h2{
-    width: 100%;
- }
-    .section2 .container2 .col-1\/2 p {
-      /* Adjust layout for footer elements */
-      width: 50%;
-      text-align: center;
+
+  .title2 h2{
+  width: 100%;
+}
+
+    .section2 .container2 .bottommenu{
+      display: block;
+      width: 100%;
+      margin: 5% 0;
       justify-content: center;
     }
     .section2 .container2 .bottommenu ul{
+      width: 100%;
         text-align: center;
         display: block;
         justify-content: center;
+        margin: 0;
+        padding: 0;
     }
     .section2 .container2 .bottommenu li{
         width: 100%;
-        padding: 10px 100px;
+        padding: 10px 0;
         justify-content: center;
+        display: block;
     }
     .container #show{
          display: none;
     }
-    .container .title{
+    .container .title2{
         display: block;
         justify-content: center;
     }
+
     .show{
         display: block;
         justify-content: center;
@@ -333,9 +411,66 @@ html, body {
         background: #EEE;
         text-align: center;
     }
+    .image-container .image0{
+      display: none;
+    }
+    .image2 .image0{
+      display: none;
+    }
+    .image-container .image1{
+      display: block;
+    }
+    .image2 .image1{
+      display: block;
+    }
+    .social{
+      display: inline-flex;
+      top: 0;
+    right: 0;
+    transform: translate(0, 0);
+      width: 100%;
+      margin: 5% 0;
+      padding: 0;
+      justify-content: center;
+    }
+    .social img{
+      padding: 0 20px;
+      width: 30px;
+      margin: 0;
+    }
+    .col-1\/2{
+      display: block;
+      width: 100%;
+      justify-content: center;
+      margin: 15px auto;
+      justify-content: center;
+    }
+    .section2 .container2 .col-1\/2 p {
+      /* Adjust layout for footer elements */
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+    .flex-row2{
+      display: block;
+      justify-content: center;
 
+    }
+    .container2 .title{
+      justify-content: center;
+      display: block;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+   .section2 .container2 .title h2{
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 5% 0;
+      padding: 0;
+   }
     /* Add any other responsive adjustments here */
   }
   
-  /* You can add more breakpoints for larger screens as needed */
   
