@@ -39,21 +39,38 @@ document.addEventListener("DOMContentLoaded", function() {
   toggleMenuDisplay();
 });
 
+// document.addEventListener("DOMContentLoaded", function() {
+//   var seeAllButtons = document.querySelectorAll(".show, #show");
+//   var seeAllImages = document.querySelectorAll(".seeall");
+
+//   seeAllButtons.forEach(function(button) {
+//     button.addEventListener("click", function() {
+//       seeAllImages.forEach(function(image) {
+//         if (image.style.display === "none" || image.style.display === "") {
+//           image.style.display = "block";
+//         } else {
+//           image.style.display = "none";
+//         }
+//       });
+//     });
+//   });
+// });
+
 document.addEventListener("DOMContentLoaded", function() {
   var seeAllButtons = document.querySelectorAll(".show, #show");
   var seeAllImages = document.querySelectorAll(".seeall");
 
   seeAllButtons.forEach(function(button) {
     button.addEventListener("click", function() {
+      var imagesHidden = Array.from(seeAllImages).every(image => image.style.display === "none" || image.style.display === "");
+      
       seeAllImages.forEach(function(image) {
-        if (image.style.display === "none" || image.style.display === "") {
-          image.style.display = "block";
-        } else {
-          image.style.display = "none";
-        }
+        image.style.display = imagesHidden ? "block" : "none";
       });
+
+      // Update the button text based on the images' visibility
+      button.textContent = imagesHidden ? "Hide" : "See All";
     });
   });
 });
-
 
