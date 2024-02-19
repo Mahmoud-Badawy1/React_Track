@@ -129,6 +129,7 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
+    margin-bottom: 0;
   }
   .form input {
       display: flex;
@@ -138,6 +139,7 @@ body {
     border-radius: 12px;
     border: 0;
   }
+  
   .terms {
     width: 100%;
     justify-content: center;
@@ -232,6 +234,16 @@ body {
     width: 100%;
     height: 100%;
   }
+  /* CSS for error messages */
+.email-error,
+.password-error {
+  display: block;
+  color: rgb(255, 255, 255); /* Set color to red */
+  font-size: 18px; /* Set font size */
+  margin:0 23% ;
+  background-color: red;
+  border-radius: 12px;
+}
   
   @media (max-width: 768px) {
 

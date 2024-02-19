@@ -1,3 +1,36 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('.form1');
+
+  form.addEventListener('submit', function(event) {
+    const email = form.querySelector('input[name="email"]');
+    const password = form.querySelector('input[name="pass"]');
+    const emailError = form.querySelector('.email-error');
+    const passwordError = form.querySelector('.password-error');
+    
+    // Email validation
+    if (!email.value || !validateEmail(email.value)) {
+      emailError.textContent = "Please enter a valid email address.";
+      event.preventDefault(); // Prevent form submission
+    } else {
+      emailError.textContent = "";
+    }
+    
+    // Password validation
+    if (!password.value || password.value.length < 4) {
+      passwordError.textContent = "Password must be at least 4 characters long.";
+      event.preventDefault(); // Prevent form submission
+    } else {
+      passwordError.textContent = "";
+    }
+  });
+
+  function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  }
+});
+
+
 
 let header = document.getElementById("header");
 let button = document.getElementById("dark-mode");
@@ -68,7 +101,7 @@ document.querySelector('.btn-publish').addEventListener('click', function() {
       });
     });
   });
-  
+
   document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.getElementById('menu-icon');
     const sidebarNavigation = document.querySelector('.sidebar-navigation');
