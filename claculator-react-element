@@ -1,0 +1,32 @@
+import React from 'react';
+
+const btnTan = React.createElement('button', null, 'tan');
+const btn9 = React.createElement('button', null, '9');
+const btn8 = React.createElement('button', null, '8');
+const btn7 = React.createElement('button', null, '7');
+const row4 = React.createElement('div', null, btn7, btn8, btn9, btnTan);
+
+const btnCos = React.createElement('button', null, 'cos');
+const btn6 = React.createElement('button', null, '6');
+const btn5 = React.createElement('button', null, '5');
+const btn4 = React.createElement('button', null, '4');
+const row3 = React.createElement('div', null, btn4, btn5, btn6, btnCos);
+
+const btnSin = React.createElement('button', null, 'sin');
+const btn3 = React.createElement('button', null, '3');
+const btn2 = React.createElement('button', null, '2');
+const btn1 = React.createElement('button', null, '1');
+const row2 = React.createElement('div', null, btn1, btn2, btn3, btnSin);
+
+const btnDivide = React.createElement('button', null, '/');
+const btnMultiply = React.createElement('button', null, '*');
+const btnSubtract = React.createElement('button', null, '-');
+const btnAdd = React.createElement('button', null, '+');
+const row1 = React.createElement('div', null, btnAdd, btnSubtract, btnMultiply, btnDivide);
+
+const calculator = React.createElement('div', { className: 'calculator' }, row1, row2, row3, row4);
+const root = React.createElement('div', { id: 'root' }, calculator);
+
+const App = () => root;
+
+export default App;
